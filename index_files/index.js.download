@@ -1,0 +1,57 @@
+function get_date()
+{
+	var d = new Date();
+	var dd = d.getDate();
+	var mm = d.getMonth()+1;
+	var yyyy = d.getFullYear();
+	var date = dd + "/" + mm + "/" + yyyy;
+	document.getElementById("dateParagraph").innerHTML = "This page was last loaded on " + date;
+}
+
+function get_time_of_day()
+{
+	var d = new Date();
+	var hour = d.getHours();
+	if (hour <= 12) {
+		return "morning";
+	} else if (hour < 18) {
+		return "afternoon";
+	} else {
+		return "evening";
+	}
+}
+
+function process_input()
+{
+	process_name();
+	process_grade();
+}
+
+function process_name()
+{
+	var name = document.getElementById("name").value;
+	document.getElementById("nameParagraph").innerHTML = "Good " + get_time_of_day() + " " + name;
+}
+
+function process_grade()
+{
+	var grade = ""
+	switch(document.forms['details'].grade.selectedIndex) {
+		case 0:
+			grade = "20%? You should actually do some work!";
+			break;
+		case 1:
+			grade = "40%? Barely a pass";
+			break;
+		case 2:
+			grade = "60%..A respectable pass I suppose";
+			break;
+		case 3:
+			grade = "80%! Good job! a solid pass";
+			break;
+		case 4:
+			grade = "100%!? Impressive!";
+			break;
+	}
+	document.getElementById("gradeParagraph").innerHTML = grade;
+}

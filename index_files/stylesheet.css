@@ -1,0 +1,108 @@
+body
+{
+	margin: 0;
+	padding: 0;
+	background-color: #4cff64;
+}
+
+#banner
+{
+	height: 6em;
+	background-color: #3DE5FF;
+	background-image: url(mainBackground.JPG);
+	max-width: 1440px;
+	border-bottom: solid thick black;
+	border-top: solid thick black;
+	background-size: cover;
+	width: 100%;
+}
+
+#menu
+{
+	position: fixed;
+	float: left;
+	width: 10em;
+	padding-top: 1em;
+	background-color: #3DE5FF;
+	border-right: solid thick black;
+	border-bottom: solid thick black;
+}
+
+#menu p 
+{
+	margin-left: 1em;
+}
+
+#menu a
+{
+	color: #fc5050;
+}
+
+#menu a:hover
+{	font-weight: bold;
+}
+
+.input
+{
+	
+}
+
+.main
+{
+
+	margin-left: 10em;
+	padding-left: 1em;
+}
+
+.contentLeft
+{
+	height: auto;
+	float: left;
+	width: 50%;
+	background-color: #39ef51;
+}
+
+.contentRight
+{
+	height: auto;
+	margin-left: 50%;
+	width: 50%;
+	background-color: #6de9ff;
+}
+
+@media screen and (max-width: 850px) {
+	.contentLeft
+	{
+		height: auto;
+		width: 100%;
+	}
+
+	.contentRight
+	{
+		clear: both;
+		margin-left: 0%;
+		height: auto;
+		width:100%;
+	}
+}
+
+@media screen and (max-width: 400px){
+	
+	.main
+	{
+		margin-left: 0em;
+		padding-left: 0em;
+	}
+	
+	#menu
+	{
+		position: relative;
+		clear: both;
+		width: 100%;
+	}
+}
+
+.footer
+{
+	font-style: italic;
+}

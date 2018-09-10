@@ -1,1 +1,82 @@
-Hello World
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0040)http://users.aber.ac.uk/jjh18/index.html -->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="./index_files/stylesheet.css">
+<meta name="author" content="Joshua Hinchliffe">
+<meta name="description" content="Personal Website">
+<meta name="keywords" content="Web Development Tools">
+<title>Homepage</title>
+</head>
+<body onload="get_date()">
+
+
+<script type="text/javascript" src="./index_files/index.js.download"></script>
+
+<div id="banner">
+	<h1>Joshua Hinchliffe</h1>
+</div>
+
+<div id="menu">
+	<p><a href="http://users.aber.ac.uk/jjh18/index.html">Home</a></p>
+	<p><a href="http://users.aber.ac.uk/jjh18/about.html">About</a></p>
+	<hr>
+	<p><a href="http://users.aber.ac.uk/jjh18/cv.html">My CV</a></p>
+	<hr>
+	<p><a href="http://users.aber.ac.uk/jjh18/wordpress">Blog</a></p>
+	<p><a href="http://users.aber.ac.uk/jjh18/webshop/content">Shop</a></p>
+	<hr>
+	<p>
+		<a href="http://validator.w3.org/check?uri=referer">
+			<img src="./index_files/valid-xhtml10-blue" alt="Valid XHTML 1.0 Transitional!" height="31" width="88">
+		</a>
+		<a href="http://jigsaw.w3.org/css-validator/check/referer">
+			<img src="./index_files/valid-css-blue" alt="Valid CSS!" height="31" width="88">
+		</a>
+	</p>
+</div>
+<div class="main">
+
+	<div class="contentLeft">
+		<h1>Hey There!</h1>
+		<h3 id="date"></h3>
+		<p>I'm Joshua Hinchliffe, A Computer Science Undergraduate and Musician</p>
+		<p>I enjoy understanding how computers work, and how to write better, more efficient code. I am currently working on a To-Do list app that allows you to nest lists, and an anagram solver that will solve multiple words.</p>
+		
+		<p>For my A-Level project I wrote a program that, when given a file, would tell you the compression type which would give the best compression ratio, then apply that compression to it. It did so by analysing a very large amount of files and all the different compression types. When a request for best compression type was made, it would try to find an appropriate match and then look up the best compression type for it. Every file it encountered was added to the database and would make the program more accurate. It opperated on a client-server basis, with one central database, which clients would query and upload details to.</p>
+		
+		<p>Another one of my passions is music. I play Piano (grade 8 standard), Acoustic Guitar, and Bass Guitar. On piano I enjoy playing ragtime, particularly Scott Joplin's work, and am working towards being able to play his complete piano works all the way through. On Acoustic Guitar I have a passion for fingerstyle, Where one attempts to fit as much of a song (Melody, Chords, Percussion etc) into just a guitar. I am particularly proud of my arrangements of Hallelujah and O Holy Night.</p>
+	</div>
+
+	<div class="contentRight input">
+		<h2>About You</h2>
+		<form id="details" action="http://users.aber.ac.uk/jjh18/index.html">
+			<p>What is your name?</p>
+			<p><input type="text" name="name" id="name" size="50"><br></p>
+			<p>What is your expected grade for this worksheet?</p>
+			<p><select name="grade">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+			</select><br></p>
+			<p><input type="button" name="submit" onclick="process_input()" value="Submit Answer"></p>
+		</form>
+		<p id="nameParagraph"></p>
+		<p id="gradeParagraph"></p>
+		<p id="dateParagraph">This page was last loaded on 10/9/2018</p>
+	</div>
+
+</div>
+
+
+<div class="main footer">
+	<p>The information provided on this and other pages by me (jjh18@aber.ac.uk), is under my own personal 
+	responsibility and not that of Aberystwyth University.</p>
+</div>
+
+
+
+
+
+</body></html>
